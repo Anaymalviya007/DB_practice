@@ -3,7 +3,7 @@ SELECT * FROM TAB;
 --NVL
 select first_name,last_name,nvl(first_name,last_name) from employees where employee_id in (100,101);
 
---INTSTR  
+--INTSTR
 SELECT * FROM DUAL; --PLACE HOLDER FOR TABLE
 --INSTR(STRING/COLUMN,SUBSTRING,WHERE TO START,WHICH OCCURENCE YOU WANT);
 SELECT INSTR('ABCDECECRC','C',2,3) FROM DUAL;
@@ -11,7 +11,8 @@ SELECT INSTR('ABCDECECRC','C',2,3) FROM DUAL;
 
 --SUBSTR
  SELECT SUBSTR('AADFVBEBE',3,4) FROM DUAL;
- 
+
+
 --TO_CHAR
 SELECT TO_CHAR(SALARY),SALARY FROM emp ;
 
@@ -40,7 +41,3 @@ SELECT MIN(SAL),MAX(SAL),AVG(SAL) FROM EMP;
 --COUNT,SUM
 --SELECT COUNT(column_name) FROM table_name WHERE condition;
 --SELECT SUM(column_name) FROM table_name WHERE condition;
-
-
-
-
